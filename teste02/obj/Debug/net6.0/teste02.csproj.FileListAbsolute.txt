@@ -1,0 +1,51 @@
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\bin\Debug\net6.0\teste02.exe
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\bin\Debug\net6.0\teste02.deps.json
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\bin\Debug\net6.0\teste02.runtimeconfig.json
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\bin\Debug\net6.0\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\bin\Debug\net6.0\teste02.pdb
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.csproj.AssemblyReference.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.GeneratedMSBuildEditorConfig.editorconfig
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.AssemblyInfoInputs.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.AssemblyInfo.cs
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.csproj.CoreCompileInputs.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\refint\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.pdb
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.genruntimeconfig.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\ref\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste02\teste02\obj\Debug\net6.0\teste02.csproj.CopyComplete
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\bin\Debug\net6.0\teste02.exe
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\bin\Debug\net6.0\teste02.deps.json
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\bin\Debug\net6.0\teste02.runtimeconfig.json
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\bin\Debug\net6.0\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\bin\Debug\net6.0\teste02.pdb
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.csproj.AssemblyReference.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.GeneratedMSBuildEditorConfig.editorconfig
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.AssemblyInfoInputs.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.AssemblyInfo.cs
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.csproj.CoreCompileInputs.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.csproj.CopyComplete
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\refint\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.pdb
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\teste02.genruntimeconfig.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\teste 04\teste02\teste02\obj\Debug\net6.0\ref\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\bin\Debug\net6.0\teste02.exe
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\bin\Debug\net6.0\teste02.deps.json
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\bin\Debug\net6.0\teste02.runtimeconfig.json
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\bin\Debug\net6.0\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\bin\Debug\net6.0\teste02.pdb
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.csproj.AssemblyReference.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.GeneratedMSBuildEditorConfig.editorconfig
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.AssemblyInfoInputs.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.AssemblyInfo.cs
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.csproj.CoreCompileInputs.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.csproj.CopyComplete
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\refint\teste02.dll
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.pdb
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\teste02.genruntimeconfig.cache
+F:\01 ARMAZENAMENTOS\Pedro\Curso de programação\IMA\Atividades\02 - Segunda fase (orientação a objeto)\Hub_de_jogos\teste02\obj\Debug\net6.0\ref\teste02.dll
