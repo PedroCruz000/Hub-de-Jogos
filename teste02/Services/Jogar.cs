@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using teste02.Entities;
 using teste02.Repositorio;
 
@@ -259,6 +260,18 @@ namespace teste02.Services
         }
 
 
+      
+
+
+
+        public static string VerificarVitoriaBatalhaNaval (string posicao,string vitoria)
+        {
+
+            return vitoria;
+        }
+
+
+
         public static void BatalhaNaval()
         {
 
@@ -284,6 +297,10 @@ namespace teste02.Services
 
             string posicao;
             int vez = 1;
+            int scoreJogador1 = 0;
+            int scoreJogador2 = 0;
+            int turno = 0;
+
 
             // repetição enquando não houver vitoria 
 
@@ -293,15 +310,74 @@ namespace teste02.Services
 
                 Tabuleiro.MostrarTabuleiro(tabuleiro, Tamanho);
 
+                //lista de navios
+
+                List<string> portaAvioes = new List<string>() { "36", "46", "56", "66", "76", "82", "83", "84", "85", "81" };
+                List<string> navio = new List<string>() { "21", "31", "41", "88", "89", "90", "13", "14", "15", "30", "40", "50" };
+                List<string> submarino = new List<string>() { "43", "44", "7", "8", "97", "98", "63", "62"};
+                // mostrar placar 
+
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("\n\t PLACAR ATUAL:");
+                Console.WriteLine($"\n\t {Jogador1}: {scoreJogador1}");
+                Console.WriteLine($"\n\t {Jogador2}: {scoreJogador2}");
+                Console.ResetColor();
+
                 //vez do jogador 1 
                 if (vez % 2 != 0)
                 {
                     posicao = PegarPosicao(Jogador1, "X");
                     Tabuleiro.AlterarTabuleiro(posicao, Tamanho, tabuleiro, "X");
 
-                    //verificar vitoria 
+
+                    
+
+
+                    //verificar se acertou algum alvo 
+
+
+
+                    if (portaAvioes.Contains(posicao))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("\n\t Acertou um Porta Avião! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        scoreJogador1++;
+                    }
+
+                    else if (navio.Contains(posicao))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("\n\t Acertou um Navio! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        scoreJogador1++;
+                    }
+
+                    else if (submarino.Contains(posicao))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("\n\t Acertou um Submarino! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        scoreJogador1++;
+                    }
+
+
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                        Console.WriteLine("\n\t Acertou na Agua! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                    }
+
+                    
+                  
                     vez++;
                 }
+                //verificar vitoria 
 
                 //vez do jogador 2 
 
@@ -310,14 +386,144 @@ namespace teste02.Services
                     posicao = PegarPosicao(Jogador2, "O");
                     Tabuleiro.AlterarTabuleiro(posicao, Tamanho, tabuleiro, "O");
 
-                    //verificar vitoria 
+                    if (portaAvioes.Contains(posicao))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("\n\t Acertou um Porta Avião! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        scoreJogador2++;
+                    }
+
+                    else if (navio.Contains(posicao))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("\n\t Acertou um Navio! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        scoreJogador2++;
+                    }
+
+                    else if (submarino.Contains(posicao))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("\n\t Acertou um Submarino! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                        scoreJogador2++;
+                    }
+
+
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                        Console.WriteLine("\n\t Acertou na Agua! ");
+                        Console.ResetColor();
+                        Console.ReadKey();
+                    }
+
 
                     vez++;
                 }
-
-            }
+                turno++;
 
                 
+
+                //verificar vitoria 
+
+                if (turno == 10)
+                {
+                    Menu.FimDeJogo();
+
+
+                    if (scoreJogador1 > scoreJogador2)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.Write("\n\tVencedor:");
+                        Console.ResetColor();
+
+                        Console.WriteLine($" {Jogador1}");
+                        Console.Write($"\t{Jogador1}");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine(" recebe +3 pontos");
+                        Console.ResetColor();
+
+                        Console.Write($"\t{Jogador2}");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine(" não recebe pontos");
+                        Console.ResetColor();
+
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Partidas += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Partidas += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Pontos += 3;
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Vitorias += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Derrotas += 1;
+                        //Ranking.AtualizarRanking();
+                        Json.Serializar();
+                        posicoes.Clear();
+                        Console.ResetColor();
+
+                    }
+                    else if(scoreJogador2 > scoreJogador1)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.Write("\n\tVencedor:");
+                        Console.ResetColor();
+                        Console.WriteLine($" {Jogador2}");
+                        Console.Write($"\t{Jogador2}");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine(" recebe +3 pontos");
+                        Console.ResetColor();
+                        Console.Write($"\t{Jogador1}");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine(" não recebe pontos");
+                        Console.ResetColor();
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Partidas += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Partidas += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Pontos += 3;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Vitorias += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Derrotas += 1;
+                        //Ranking.AtualizarRanking();
+                        Json.Serializar();
+                        posicoes.Clear();
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine("\n\tEmpate: Deu velha.");
+                        Console.ResetColor();
+                        Console.Write($"\t{Jogador1}");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine(" recebe +1 ponto");
+                        Console.ResetColor();
+                        Console.Write($"\t{Jogador2}");
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine(" recebe +1 ponto");
+                        Console.ResetColor();
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Partidas += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Partidas += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Pontos += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Pontos += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador1).Empates += 1;
+                        Json.jogadores.Find(player => player.Nome == Jogador2).Empates += 1;
+                        //Ranking.AtualizarRanking();
+                        Json.Serializar();
+                        posicoes.Clear();
+                        Console.ResetColor();
+                    }
+
+
+                    Console.ReadKey();
+                    break;
+                }
+
+
+
+                
+            }
+
+
         }
 
     }

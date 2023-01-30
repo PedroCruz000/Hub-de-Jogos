@@ -273,5 +273,18 @@ namespace teste02
         {
             Console.WriteLine("");
         }
+        
+
+        public static void FimDeJogo()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("\n\tFIM DE JOGO!!!");
+            Console.WriteLine("\n\tPressione qualquer tecla para sair \t\n");
+            Console.WriteLine("===========================================================");
+            Console.ReadKey();
+            Console.ResetColor();
+        }
     }
 }
