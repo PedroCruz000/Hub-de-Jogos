@@ -315,6 +315,13 @@ namespace teste02.Services
                 List<string> portaAvioes = new List<string>() { "36", "46", "56", "66", "76", "82", "83", "84", "85", "81" };
                 List<string> navio = new List<string>() { "21", "31", "41", "88", "89", "90", "13", "14", "15", "30", "40", "50" };
                 List<string> submarino = new List<string>() { "43", "44", "7", "8", "97", "98", "63", "62"};
+
+
+                // mostrar turnos 
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine($"\n\t Turno:{turno}/10");
+                Console.ResetColor();
+
                 // mostrar placar 
 
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -491,7 +498,7 @@ namespace teste02.Services
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("\n\tEmpate: Deu velha.");
+                        Console.WriteLine("\n\t Empate");
                         Console.ResetColor();
                         Console.Write($"\t{Jogador1}");
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
