@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using teste02.Repositorio;
@@ -27,6 +28,15 @@ namespace teste02
             Console.ResetColor();
             string nome = Console.ReadLine();           
             return nome;
+        }
+
+        public static string PegarSenha()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("\n\t Digite uma Senha:");
+            Console.ResetColor();
+            string senha = Console.ReadLine();
+            return senha;
         }
 
         public static void ShowMenu()
@@ -169,7 +179,10 @@ namespace teste02
                     switch (escolha)
                     {
                         case 1:
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.Write("\n\t Digite um nome valido:");
+                            Console.ResetColor();
                             nome = Console.ReadLine();
                             NaoExisteJogador(nome);
                             escolha = 0;
@@ -186,7 +199,23 @@ namespace teste02
         
             return nome;
         }
+        public static string ValidarSenha( string senha,string nome)
+        {
+            
+            while (Json.jogadores.Any(player => player.Nome == nome && player.Senha != senha))
+            {
+                
+               
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Clear();
+                Console.WriteLine("\n\t Senha invalida:");
+                Console.ResetColor();               
+                senha = PegarSenha();
+            }
 
+
+            return senha;
+        }
        
 
         public static string NaoExisteJogadorParaDeletar(string nome)

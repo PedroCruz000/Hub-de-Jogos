@@ -17,36 +17,54 @@ namespace teste02.Services
         private static int Tamanho;
         private static List<string> posicoes = new List<string>() ;
 
+        public static string FazerLogin()
+        {
+            string nome = Console.ReadLine();
+            nome = Menu.NaoExisteJogador(nome);
 
+            string senha = Menu.PegarSenha();
+            senha = Menu.ValidarSenha(senha, nome);
+
+            return nome;
+        }
         public static void SelecionarJogadores()
         {
 
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\n\t Selecione os jogadores:");
-            Console.Write("\n\tJogador 1: ");
+            Console.Write("\n\t Jogador 1: ");
             Console.ResetColor();
 
-            //pedir para o usuario escolher o jogador pelo nome:
-            string jogador1 = Console.ReadLine();
+            // fazer login jogador  1
 
-            //validar se o jogador existe 
-            jogador1 = Menu.NaoExisteJogador(jogador1);
+             
+           
+
+            //passar o nome validado para o jogador 1
+            string jogador1 = FazerLogin();
+
+
 
             //doble check
-           if (!Json.jogadores.Any(player => player.Nome == jogador1))
+            if (!Json.jogadores.Any(player => player.Nome == jogador1))
             {
                 return;
             }
+
+            
             // adicionar o jogador 1 ao nome do jogador 
             Jogador1 = jogador1;
 
+
             //repetir o processo para o jogador 02 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write("\n\tJogador 2: ");
+            Console.Write("\n\t Jogador 2: ");
             Console.ResetColor();
-            string jogador2 = Console.ReadLine();
-            jogador2 = Menu.NaoExisteJogador(jogador2);
+
+
+            string jogador2 = FazerLogin();
+            
 
             //doble check
             if (!Json.jogadores.Any(player => player.Nome == jogador2))

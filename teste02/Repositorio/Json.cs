@@ -46,9 +46,13 @@ namespace teste02.Repositorio
                 return;
             }
            
-
+            //pedir uma senha
+            string senha = Menu.PegarSenha();
+            
             //criar um jogador utulizando a classe e o construtor 
-            Jogador jogador = new Jogador(nome);
+            Jogador jogador = new Jogador(nome,senha);
+                   
+
 
             //dicionar um jogador 
             jogadores.Add(jogador);
@@ -77,6 +81,14 @@ namespace teste02.Repositorio
                 return;
             }
 
+            //pegar senha
+            string senha = Menu.PegarSenha();
+
+            
+
+            //validar senha 
+            senha = Menu.ValidarSenha(senha, nome);
+
             jogadores.RemoveAll(player => player.Nome == nome);
             Serializar();
 
@@ -90,6 +102,16 @@ namespace teste02.Repositorio
             return;
 
         }
+
+
+
+
+        //login para jogar 
+
+        
+
+
+
 
        /* public static void Atualizar()
         {
