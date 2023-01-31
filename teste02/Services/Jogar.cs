@@ -22,6 +22,7 @@ namespace teste02.Services
             string nome = Console.ReadLine();
             nome = Menu.NaoExisteJogador(nome);
 
+           
             string senha = Menu.PegarSenha();
             senha = Menu.ValidarSenha(senha, nome);
 

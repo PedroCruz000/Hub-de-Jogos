@@ -133,5 +133,12 @@ namespace teste02.Entities
             if (velha == tamanho * tamanho) return true;
             return false;
         }
+
+
+
+
+
+       
+        
     }
 }
